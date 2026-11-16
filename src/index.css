@@ -1,0 +1,98 @@
+:root {
+  --bg: #e8eef4;
+  --bg-accent: #d5e0ea;
+  --surface: #f7fafc;
+  --ink: #1a2332;
+  --muted: #5a6b7d;
+  --line: #c5d0db;
+  --accent: #1f6f8b;
+  --accent-soft: #d0e8f0;
+  --done: #2d6a4f;
+  --danger: #9b2226;
+  --radius: 10px;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #c9dae8 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #b8d4c8 0%, transparent 50%),
+    var(--bg);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.ghost {
+  background: transparent;
+  border-color: transparent;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "IBM Plex Serif", "Iowan Old Style", Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.35rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.status {
+  background: var(--accent-soft);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  margin: 0 0 0.75rem;
+}
